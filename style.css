@@ -19,7 +19,7 @@ h1 {
   float: left;
   width: 50%;
 }
-.container .results .pixelsCont {
+.container .results .alm_pixelsCont {
   margin: 0px 20px;
   height: 410px;
   border: 1px solid #eee;
@@ -54,7 +54,7 @@ h1 {
   height: 80%;
   margin: 20px 0px;
 }
-.pixels {
+.alm_pixels {
   display: inline-block;
   width: 1px;
   height: 1px;
