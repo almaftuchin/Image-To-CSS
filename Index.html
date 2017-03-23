@@ -1,0 +1,121 @@
+<div class="ribbon-wrapper">
+<h3 class="ribbon">
+<strong class="ribbon-inner">Image To CSS</strong>
+</h3>
+</div>
+<style>
+#mainiu {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+}
+.ribbon-wrapper {
+  position: relative;
+  z-index: 1;
+  margin: 5% auto;
+}
+
+h1.post-title {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.ribbon {
+  font-size: 20px!important;
+  text-transform: uppercase;
+  width: 50%;
+  position: relative;
+  background: #374760;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em;
+  margin: 2em auto 3em
+}
+
+.ribbon:after,
+.ribbon:before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #374760;
+  z-index: -1
+}
+
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent
+}
+
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent
+}
+
+.ribbon .ribbon-inner:after,
+.ribbon .ribbon-inner:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #1E2E36 transparent transparent;
+  bottom: -1em
+}
+
+.ribbon .ribbon-inner:before {
+  left: 0;
+  border-width: 1em 0 0 1em
+}
+
+.ribbon .ribbon-inner:after {
+  right: 0;
+  border-width: 1em 1em 0 0
+}
+
+</style>
+<link rel="stylesheet" href="https://cdn.rawgit.com/almaftuchin/Image-To-CSS/ab53c885/style.css">
+<div class='container'>
+<div class='config'>
+<label>Choose Image:</label>
+<input id='upload' type='file'>
+<label>PixelSize:</label>
+<input id='size' type='number' value='1'>
+<label>Space:</label>
+<input id='space' type='number' value='0'>
+<label>Alpha:</label>
+<select id='alpha'>
+<option value='yes'>Yes</option>
+<option value='no'>No</option>
+</select>
+<label>Pixel Roundess:</label>
+<input id='roundness' type='number' value='0'>
+<div class='actions'>
+<button id='convert'>Convert</button>
+</div>
+<div class='css'>
+<textarea></textarea>
+</div>
+</div>
+<div class='results'>
+<div class='pixelsCont'>
+<div class='pixels'>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdn.rawgit.com/almaftuchin/Image-To-CSS/7db09778/Command.js"></script>
+<style>
+#mainiu {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+}
+.post-body {
+    padding: 0;
+    line-height: 1.7;
+    background: #7f8c8d;
+}
+</style>
